@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #4CAF50;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  .hero {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-btn {
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .hero-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #4CAF50;
+        width: 100%;
+    }
+  
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .menu-toggle {
+        display: flex;
+    }
+  }
+  
+.employers-section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.employers-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.employers-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.employers-section ul {
+    margin-bottom: 30px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.employers-section h2 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.post-job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.post-job-form input,
+.post-job-form select,
+.post-job-form textarea,
+.post-job-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post-job-form textarea {
+    height: 100px;
+}
+
+.post-job-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.post-job-form button:hover {
+    background-color: #45a049;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .post-job-form {
+        flex-direction: column;
+    }
+
+    .post-job-form input,
+    .post-job-form select,
+    .post-job-form button {
+        width: 100%;
+    }
+}

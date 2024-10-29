@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JobFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.html">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">JobFinder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Employers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header about-header">
+        <h1>About Us</h1>
+        <p>Your career journey starts here.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>
+                At JobFinder, we are committed to connecting people with their dream jobs.
+                Since our inception in 2020, we’ve helped thousands of professionals find
+                meaningful careers and hundreds of companies discover top talent.
+            </p>
+        </div>
+
+        <div class="about-content">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is simple – to empower job seekers and employers by offering a
+                seamless platform that bridges the gap between talent and opportunity.
+                We believe everyone deserves a fulfilling career.
+            </p>
+        </div>
+
+        <div class="about-team">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="CEO">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="CTO">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="HR Head">
+                    <h3>Emily Davis</h3>
+                    <p>Head of Human Resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 JobFinder. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
